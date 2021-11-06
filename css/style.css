@@ -1,0 +1,106 @@
+* {
+  font-family: 'Scheherazade New', serif; }
+
+.navbar-nav a {
+  color: whitesmoke; }
+
+.navbar-nav a:hover {
+  text-decoration: underline;
+  color: whitesmoke; }
+
+.navBorder {
+  color: whitesmoke;
+  margin: 10px 0px;
+  text-align: center;
+  line-height: inherit; }
+
+@media screen and (max-width: 991px) {
+  .navBorder {
+    display: none; } }
+.header {
+  max-height: 700px; }
+
+.header_content {
+  color: grey;
+  top: 20px;
+  right: 10%;
+  font-weight: bold; }
+
+.header_center {
+  top: 40%;
+  left: 10%;
+  width: 80%;
+  box-shadow: 0px 0px 3px gray;
+  border-radius: 15px; }
+
+.bar {
+  border: solid;
+  border-radius: 9px; }
+
+.col-border {
+  border-left: 1px solid gray; }
+
+.header ul {
+  list-style: none; }
+
+#line {
+  width: 50%;
+  height: 5px;
+  transition: transform 1s ease; }
+
+@media screen and (max-width: 950px) {
+  .header_center {
+    display: none; } }
+.header_bottom {
+  bottom: 4px;
+  left: 50%;
+  font-size: 3em;
+  color: grey; }
+
+.header_bottom i:hover {
+  transform: scale(1.5); }
+
+.div_1_child {
+  background-image: url("../img/epharmacy-solution-banner-rtl.jfif");
+  background-size: cover; }
+
+.text_1 {
+  color: #666666; }
+
+.text_2 {
+  color: #6f7072; }
+
+.figure-caption span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8em;
+  opacity: .5; }
+
+.links span a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.6; }
+
+.links span a:hover {
+  text-decoration: underline; }
+
+.links span:hover {
+  transform: scale(1.07); }
+
+ul {
+  padding: 0px;
+  margin: 0px; }
+
+footer ul li {
+  list-style-type: none;
+  margin-top: 15px; }
+
+footer ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  font-size: 1em; }
+
+footer ul li a:hover {
+  text-decoration: underline;
+  color: whitesmoke; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,528 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <style>
+        * {
+
+            font-family: 'Scheherazade New', serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        body {
+            /*   overflow: hidden; */
+            overflow-x: hidden;
+
+        }
+
+        .parent {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: rgb(0, 112, 205);
+        }
+
+        .navbar-nav a {
+            color: whitesmoke !important;
+        }
+
+        .navbar-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .navBorder {
+            color: whitesmoke;
+            margin: 10px 0px;
+            text-align: center;
+            line-height: inherit;
+        }
+
+        .head {
+            background-image: url("https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/search-header-background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(236, 236, 236);
+
+        }
+
+        .middle {
+            background-color: rgb(226, 230, 234);
+
+        }
+
+        input:required {
+            border: red 1px solid;
+        }
+
+        input:valid {
+            border: blue 1px solid;
+        }
+
+
+        .div {
+            color: red;
+        }
+        .bar {
+          border: solid;
+           border-radius: 9px; }
+
+         .col-border {
+         border-left: 1px solid gray; }
+         
+         .dropdown-menu ul{
+             list-style-type: none;
+         }
+        /* 
+       .write > input:valid+.div {
+            visibility: hidden;
+        }
+
+       .write>input:invalid+.div {
+            visibility: visible;
+
+        } */
+
+
+
+        .title::after {
+            content: "*";
+            color: red;
+            font-size: small;
+
+        }
+
+        .email {
+            text-decoration: none;
+            color: gray;
+        }
+
+        .email:hover {
+            color: red;
+        }
+
+
+        .vl {
+            border-left: 2px solid gray;
+            height: auto;
+        }
+
+
+
+        ul {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        footer ul li {
+            list-style-type: none;
+            margin-top: 15px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 1em;
+
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+            color: whitesmoke;
+        }
+
+        .title::after {
+            content: "*";
+            color: red;
+            font-size: small;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid  bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg  px-5 justify-content-between ">
+                <div>
+                    <button class="navbar-toggler btn-primary me-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="fal fa-bars"></i>
+                    </button>
+
+                    <div class=" offcanvas offcanvas-start bg-primary navbar-collapse" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title mx-5 my-2 text-light" id="offcanvasExampleLabel"> Vezeeta </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+
+                        <div class="navbar-nav">
+                            <select class="nav-link  bg-transparent border-0 text-light p-1 ">
+                                <option><a href="#">مصر</a></option>
+                                <option><a href="#">مصر</a></option>
+                                <option><a href="#">مصر</a></option>
+                                <option><a href="#">مصر</a></option>
+                                <option><a href="#">مصر</a></option>
+                            </select>
+                            <span class="navBorder">|</span>
+
+                            <a class="nav-link" href="#" aria-disabled="true">English</a>
+                            <span class="navBorder">|</span>
+                            <a class="nav-link" href="ContactUs.html">اتصل بنا</a>
+                            <span class="navBorder">|</span>
+                            <a class="nav-link" href="doctots.html">فزيتا للاطباء</a>
+                            <span class="navBorder">|</span>
+                            <a class="nav-link" href="login.html">دخول</a>
+                            <span class="navBorder">|</span>
+                            <a class=" nav-link btn  border-1 border-light px-1 me-1" href="Register.html"> انضم الان</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" navbar-brand text-start">
+                  <a href="index.html"><img src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/whitelogowithdotcom.png"
+                        class="img-responsive img-fluid" alt="logo"></a>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid  head">
+        <div class="container">
+            <header class="row  d-none d-md-flex pe-4 pt-2 pb-2">
+                <div class="row fw-bold text-secondary" style="font-size: 1.5rem;">
+                    احجز مع دكتور شاطر
+                </div>
+                <div class="row text-secondary" style="font-size: 1.1rem;">
+                    <div>
+                        <span> احجز اونلاين او كلم </span>
+                        <span> <i class="bi bi-telephone-fill text-danger"> </i></span>
+                        <span> ١٦٦٧٦ </span>
+                    </div>
+                    <div class="row text-secondary" style="font-size: 1.1rem;">
+                        <div>
+                            ١٥٠٠٠ دكتور-٩٠٠٠ استشاري واستاذ-اكثر من ٤٠ تخصص
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-cols-5 bg-light  text-center border-1 border-secondary mt-2  bar">
+                    <!-- ////////////////////////////////////// -->
+                    <div class="col col-border">
+                     <div class="dropdown">
+                       <a class="text-decoration-none d-flex justify-content-between align-items-center  dropdown-toggle" href="#" role="button" id="drop1" data-bs-toggle="dropdown" aria-expanded="false">
+                         <div>
+                         <p class="text_1">أنا ابحث عن دكتور</p>
+                         <span class="fw-bold"><i class="fas fa-stethoscope"></i> اختار التخصص</span>
+                         </div>
+                       </a>
+                     
+                       <div class="dropdown-menu" aria-labelledby="drop1">
+                         <ul>
+                         <li><a class="dropdown-item" href="#">جلدية </a></li>
+                         <li><a class="dropdown-item" href="#">اسنان </a></li>
+                         <li><a class="dropdown-item" href="#">نفسي </a></li>
+                         <li><a class="dropdown-item" href="#">اطفال وحديثي الولادة </a></li>
+                       </ul>
+                     </div>
+                       </div>
+                     </div>
+ 
+                   <!-- ///////////////////////////////////////////// -->
+ 
+                    <div class="col col-border"> 
+                     <div class="dropdown">
+                       <a class="text-decoration-none d-flex justify-content-between align-items-center  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                         <div>
+                         <p class="text_1">في محافظة</p>
+                         <span class="fw-bold"><i class="fas fa-map-marker-alt text-danger"></i>  الجيزة </span>
+                         </div>
+                       </a>
+                     
+                       <div class="dropdown-menu  " aria-labelledby="dropdownMenuLink">
+                         <ul>
+                         <li><a class="dropdown-item" href="#">كل المحافظات  </a></li>
+                         <li><a class="dropdown-item" href="#">القاهرة </a></li>
+                         <li><a class="dropdown-item" href="#">الاسكندرية  </a></li>
+                         <li><a class="dropdown-item" href="#">الساحل الشمالي</a></li>
+                        
+                       </ul>
+                     </div>
+                       </div>
+                   </div>
+ 
+                   <div class="col col-border"> 
+                     <div class="dropdown">
+                       <a class="text-decoration-none d-flex justify-content-between align-items-center  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                         <div>
+                         <p class="text_1">في المنطقة</p>
+                         <span class="fw-bold"><i class="fas fa-map-marker-alt text-danger"></i> اختار المنطقة</span>
+                         </div>
+                       </a>
+                     
+                       <div class="dropdown-menu  " aria-labelledby="dropdownMenuLink">
+                         <ul>
+                         <li><a class="dropdown-item" href="#">كل المناطق  </a></li>
+                         <li><a class="dropdown-item" href="#">الدقي والمهندسين  </a></li>
+                         <li><a class="dropdown-item" href="#">6 اكتوبر  </a></li>
+                         <li><a class="dropdown-item" href="#">الهرم  </a></li>
+     
+                       </ul>
+                     </div>
+                      </div>
+                   </div>
+ 
+                   <div class="col col-border">
+ 
+                    <a class="text-decoration-none d-flex justify-content-between align-items-center " >
+                         <div>
+                         <p class="text_1 text-end">في محافظة</p>
+                         <span class="fw-bold d-flex"><i class="fas fa-user-md ms-2"></i> <input type="text" class="border-0 bg-transparent" placeholder="الدكتور او المستشفي" id="input"> </span>
+                         </div>
+                   </a>
+ 
+                   </div>
+ 
+                   <div class="col bg-danger" style="border-radius: 10px 0 0 10px; cursor: pointer;" onclick="location.assign('DoctorProfile.html')" >
+                     <p class="text-light mt-2" style="font-size: 1.7em;"><i class="fas fa-search"></i> ابحث</p>
+                   </div>
+ 
+                  </div>
+            </header>
+        </div>
+    </div>
+    <div class="container-fluid middle ">
+        <div class="container">
+            <div class="pt-4 pb-4">
+                <div class="container rounded bg-light  pt-3 pb-3">
+                    <div class="row">
+                        <div class="col-md-6 col-12  mb-md-1 mb-4">
+                            <div class=" fs-4" style="color: rgb(0, 112, 205);">
+                                اتصل بنا
+                            </div>
+                            <div class=" fs-5 text-secondary">
+                                نحن سعداء لتلقي استفساراتكم واقتراحاتكم.
+                            </div>
+                            <div>
+                                <form class="needs-validation">
+                                    <div class="d-flex flex-md-row  flex-column mt-3 mb-2 write">
+                                        <label for="name"
+                                            class="col-form-label title col-4 text-secondary fs-5">الاسم</label>
+                                        <input class="form-control form-control-sm" type="text"
+                                            placeholder="الإسم بالكامل" pattern="[A-Za-z]{6,20}" required name="name"
+                                            id="name">
+
+                                    </div>
+                                    <div class="d-flex flex-md-row flex-column mt-2 mb-1 diV">
+                                        <label for="namevalid"
+                                            class="col-form-label  col-md-4 col-0 text-secondary fs-5">
+                                        </label>
+                                        <div id="namevalid">
+                                            يرجي إدخال الأسم
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-md-row  flex-column  mt-3 mb-2 write">
+                                        <label for="phone" class="col-form-label title col-4 text-secondary fs-5">رقم
+                                            المويايل</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control form-control-sm" id="phone"
+                                                placeholder="رقم الموبايل" name="phone" required
+                                                pattern="01(0|1|2|5)[0-9]{8}">
+
+                                            <span class="input-group-text" id="eg">
+                                                <img src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/Egypt.png"
+                                                    class="img-fluid" width="25px">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-md-row flex-column mt-1 mb-2 diV">
+                                        <label for="numbervalid"
+                                            class="col-form-label  col-md-4 col-0 text-secondary fs-5">
+                                        </label>
+                                        <div class="diV" id="numbervalid">
+                                            يرجي إدخال رقم الموبايل
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-md-row  flex-column mt-3 mb-2 write">
+                                        <label for="name" class="col-form-label title col-4 text-secondary fs-5">البريد
+                                            الإلكتروني</label>
+                                        <input class="form-control form-control-sm" type="email"
+                                            placeholder="example@domain.com" required
+                                            pattern="([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})"
+                                            onfocus="" name="email" id="email">
+
+                                    </div>
+                                    <div class="d-flex flex-md-row flex-column mt-1 mb-2 div">
+                                        <label for="namevalid"
+                                            class="col-form-label  col-md-4 col-0 text-secondary fs-5">
+                                        </label>
+                                        <div class="diV" id="namevalid">
+                                            يرجي إدخال الإيميل
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <label for="name" class="col-form-label  col-md-4 col-0 text-secondary fs-5">
+                                        </label>
+                                        <input class="btn btn-danger px-5 px-md-4 " onclick="valid()" type="submit" value="ارسال"
+                                            pattern="[A-Za-z]{9,20}">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="vl col-md-1 col-0 "></div>
+                        <div class="col-5">
+                            <div class=" fs-4" style="color: rgb(0, 112, 205);">
+                                اتصل بنا
+                            </div>
+                            <div class=" fs-6 text-secondary">
+                                ١٦٦٧٦ سعر مكالمة عادية
+                            </div>
+                            <div class=" fs-6 text-secondary mt-3 mb-3">
+                                من خارج مصر اتصل ب:
+                                <div class="fw-bold">
+                                    +20225983999
+                                </div>
+                            </div>
+                            <div class=" fs-4 mt-3 mb-3 " style="color: rgb(0, 112, 205);">
+                                العنوان
+                            </div>
+                            <div class=" fs-6 text-secondary mt-3 mb-3 ">
+                                ١٢٤ شارع عثمان بن عفان خلف الكليه الحربيه - مصر الجديدة
+                            </div>
+                            <div class=" fs-4 mt-3 mb-3" style="color: rgb(0, 112, 205);">
+                                راسلنا على
+                            </div>
+                            <div class=" fs-6 text-secondary mt-3 mb-3">
+                                <a href="#" class="email">
+                                    customercare@vezeeta.com
+                                </a>
+                            </div>
+                            <div class="d-flex flex-row mb-5">
+                                <a href="https://www.facebook.com/" target="	_blank">
+                                    <img src="https://img.icons8.com/fluency/30/000000/facebook-new.png"
+                                        class="mx-md-2 mx-5" />
+                                </a>
+                                <a href="https://www.instagram.com/" target="	_blank">
+                                    <img src="https://img.icons8.com/office/30/000000/instagram-new.png"
+                                        class="mx-md-2 mx-5" />
+                                </a>
+                                <a href="https://twitter.com/home?lang=ar" target="	_blank">
+                                    <img src="https://img.icons8.com/office/30/000000/twitter.png"
+                                        class="mx-md-2 mx-5" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-primary">
+        <div class="container">
+            <footer class="footer  text-light">
+                <div class="row row-cols-md-5 row-cols-2 justify-content-center py-4">
+                    <div class="col">
+                      <a href="index.html">  <img class="img-responsive img-fluid"
+                            src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/whitelogowithdotcom.png"></a>
+                        <ul>
+                            <li><a href="#">من نحن</a></li>
+                            <li><a href="#">فريق فيزيتا</a></li>
+                            <li><a href="#">وظائف</a></li>
+                            <li><a href="#">الصحافة</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5 class="fw-bold">ابحث عن طريق</h5>
+                        <ul>
+                            <li><a href="Elta5sos.html">التخصص</a></li>
+                            <li><a href="area.html">المنطقة</a></li>
+                            <li><a href="health.html">التأمين</a></li>
+                            <li><a href="#">المستشفى</a></li>
+                            <li><a href="#">المركز </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5 class="fw-bold">هل أنت طبيب ؟</h5>
+                        <ul>
+                            <li><a href="#">انضم الى أطباء فيزيتا</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5 class="fw-bold">تحتاج للمساعدة ؟</h5>
+                        <ul>
+                            <li><a href="#">اتصل بنا</a></li>
+                            <li><a href="#">شروط الاستخدام</a></li>
+                            <li><a href="#">اتفاقية الخصوصية</a></li>
+                            <li><a href="#">اتفاقية الخصوصية للأطباء</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <ul>
+                            <li><a href="#"><img class="img-fluid"
+                                        src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/google-play-badge.png">
+                                </a></li>
+                            <li><a href="#"><img class="img-fluid"
+                                        src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/app-store-badge.png">
+                                </a></li>
+                            <li class="d-flex">
+                                <a href="#"><i class="fa fa-facebook-f fs-3 ms-4"></i></a>
+                                <a href="#"><i class="fa fa-twitter fs-3 ms-4"></i></a>
+                                <a href="#"><i class="fa fa-instagram fs-3"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+    <script>
+        function valid(){
+        var valid = document.querySelectorAll('.write+.div');
+        var input = document.querySelectorAll('.write>input')
+        for (var i = 0; i < input.length; i++) {
+            console.log(input[i])
+            if (input[i].checkValidity()) {
+                valid.className = "d-none";
+            }
+        }
+
+    }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+* {
+
+    font-family: 'Scheherazade New', serif;
+
+}
+
+.navbar-nav a {
+    color: whitesmoke !important;
+}
+
+.navbar-nav a:hover {
+    text-decoration: underline;
+}
+
+.navBorder {
+    color: whitesmoke;
+    margin: 10px 0px;
+    text-align: center;
+    line-height: inherit;
+}
+
+#bkImage {
+    background-image: url("https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/34088/_next/static/images/search-header-background.jpg");
+}
+
+ul {
+    padding: 0px;
+    margin: 15px;
+}
+
+footer ul li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1em;
+
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+
+body {
+    /* overflow-x: hidden; */
+    background-color: rgb(240, 240, 240) !important;
+}
+
+@media screen and (max-width: 991px) {
+
+    .navBorder {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #bkImage {
+        display: none;
+    }
+}

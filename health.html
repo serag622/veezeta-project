@@ -1,0 +1,436 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        * {
+            font-family: 'Scheherazade New', serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            direction: rtl;
+        }
+
+        body {
+            overflow-x: hidden;
+            height: auto;
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            background-color: rgb(0, 112, 205);
+        }
+
+        .navbar-nav a {
+            color: whitesmoke !important;
+        }
+
+        .navbar-nav a:hover {
+            text-decoration: underline;
+        }
+
+        .navBorder {
+            color: whitesmoke;
+            margin: 10px 0px;
+            text-align: center;
+            line-height: inherit;
+        }
+
+        .head {
+            background-image: url("https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/search-header-background.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(236, 236, 236);
+
+        }
+
+        .middle {
+            background-color: rgb(226, 230, 234);
+        }
+
+        .right li,
+        .left li {
+            list-style-type: none;
+        }
+
+        .right a,
+        .left a {
+            text-decoration: none;
+            color: gray;
+            font-weight: bold;
+        }
+
+        .right a:hover,
+        .left a:hover {
+            color: rgb(0, 112, 205);
+            text-decoration: underline;
+
+        }
+
+        .v {
+            text-decoration: none;
+        }
+
+        .v:hover {
+            text-decoration: underline;
+        }
+
+        .doc {
+            border-radius: 10px;
+        }
+
+        .search {
+            border-radius: 10px;
+        }
+
+        .search:read-write {
+            box-shadow: 1px 1px rgb(165, 164, 164);
+        }
+
+        .t1 {
+            color: rgb(0, 112, 205);
+        }
+
+
+        ul {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        footer ul li {
+            list-style-type: none;
+            margin-top: 15px;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 1em;
+
+        }
+
+        footer ul li a:hover {
+            text-decoration: underline;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid parent">
+        <nav class="navbar navbar-expand-lg  bg-primary px-5 justify-content-between ">
+            <div>
+                <button class="navbar-toggler btn-primary me-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fal fa-bars"></i>
+                </button>
+
+                <div class=" offcanvas offcanvas-start bg-primary navbar-collapse" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title mx-5 my-2 text-light" id="offcanvasExampleLabel"> Vezeeta </h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+
+                    <div class="navbar-nav">
+                        <select class="nav-link  bg-transparent border-0 text-light p-1 ">
+                            <option><a href="#">مصر</a></option>
+                            <option><a href="#">مصر</a></option>
+                            <option><a href="#">مصر</a></option>
+                            <option><a href="#">مصر</a></option>
+                            <option><a href="#">مصر</a></option>
+                        </select>
+                        <span class="navBorder">|</span>
+
+                        <a class="nav-link" href="#" aria-disabled="true">English</a>
+                        <span class="navBorder">|</span>
+                        <a class="nav-link" href="ContactUs.html">اتصل بنا</a>
+                        <span class="navBorder">|</span>
+                        <a class="nav-link" href="doctots.html">فزيتا للاطباء</a>
+                        <span class="navBorder">|</span>
+                        <a class="nav-link" href="login.html">دخول</a>
+                        <span class="navBorder">|</span>
+                        <a class=" nav-link btn  border-1 border-light px-1 me-1" href="Register.html"> انضم الان</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" navbar-brand text-start">
+               <a href="index.html"> <img src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/whitelogowithdotcom.png"
+                    class="img-responsive img-fluid" alt="logo"></a>
+            </div>
+
+        </nav>
+        <header class="row head d-none d-md-flex pe-5 pt-2 pb-2">
+            <div class="row fw-bold text-secondary" style="font-size: 1.5rem;">
+                احجز مع دكتور شاطر
+            </div>
+            <div class="row text-secondary" style="font-size: 1.1rem;">
+                <div>
+                    <span> احجز اونلاين او كلم </span>
+                    <span> <i class="bi bi-telephone-fill text-danger"> </i></span>
+                    <span> ١٦٦٧٦ </span>
+                </div>
+                <div class="row text-secondary" style="font-size: 1.1rem;">
+                    <div>
+                        ١٥٠٠٠ دكتور-٩٠٠٠ استشاري واستاذ-اكثر من ٤٠ تخصص
+                    </div>
+                </div>
+            </div>
+            <div class="row flex-row mt-3 mb-3">
+                <div class=" d-flex flex-row">
+                    <select class="form-select mb-3">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select mb-3">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select mb-3">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <select class="form-select mb-3">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <div class="form-floating col-2">
+
+                        <input type="text" class="form-control" id="title">
+                        <label for="title" class="text-align-right text-muted" style="direction: rtl;">أو اكتب
+                            اسم</label>
+
+                    </div>
+
+                    <button class="btn btn-danger p-2 text-light fw-bold col-2" style="font-size: 1.1rem;">
+                        <span>
+                            <i class="bi bi-search mt-3"></i>
+                        </span>
+                        <span>
+                            ابحث
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div>
+            <div class="container-fluid middle pt-3 pb-3">
+                <div class="container">
+                    <div class=" row mx-auto mb-2">
+                        <span style="font-size: .8rem;">
+                            <a href="#" class="v"><small class="t1"> فيزيتا</small> </a>
+                            <small class="t1">/</small>
+                            <small class="text-secondary mx-1">التخصصات</small>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <input type="text" class="form-control form-control-lg fw-bold search mb-4 p-2"
+                        placeholder="ابحث عن التأمين بالاسم" style="color:rgb(0, 112, 205) ;">
+                </div>
+                <div class="container">
+                    <div class=" row doc bg-light mx-auto mb-5">
+                        <div class="col-md-6 col-12">
+                            <div>
+                                <ul class="right">
+
+                                    <li class="mb-4 mt-1 mt-md-4">
+                                        <a href="#" class="mx-3" id="item1">كل التأمينات</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">أكسا</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">نقابة المهندسين</a>
+                                    </li class="mb-4">
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">يوني كير</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">اسمنت سيناء</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">اكتيف للرعاية الصحية</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">اكسترا كير</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">الاجزاخانة</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">الاطباء المتضامنون</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">الأهلي سوسيته جنرال</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">الاهلي للخدمات الطبية</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">البنك العربي الاقريقي</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">البنك العقاري المصري الدولي</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">التأمين الأجتماعي للعاملين ببنك التجاري الدولي</a>
+                                    </li>
+                                    <li class="mb-md-5 mb-4">
+                                        <a href="#" class="mx-3">الترافيجين</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div>
+                                <ul class="left">
+                                    <li class="mb-4  mt-1 mt-md-4">
+                                        <a href="#" class="mx-3">ميد رايت</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">ميتلاف اليكو</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">ايجيكير</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">برايم هيلث</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">دايموند ميديكال هيلث</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">اتحاد الشركات المصري الفرنسي لمترو الأنفاق</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">اكاديمية موهوبين الهرم وذويهم</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">أكس فاستر</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">أكسس</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">الاسعاف</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">الأهلي المصري</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">الاهلي للتأمين</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">البنك الزراعي المصري</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">البنك العقاري المصري العربي</a>
+                                    </li>
+                                    <li class="mb-4">
+                                        <a href="#" class="mx-3">البنك المركزي المصري</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer bg-primary text-light pe-5">
+            <div class="row row-cols-md-5 row-cols-2 justify-content-center py-4">
+                <div class="col">
+                  <a href="login.html">  <img class="img-responsive img-fluid"
+                        src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/whitelogowithdotcom.png"></a>
+                    <ul>
+                        <li><a href="#">من نحن</a></li>
+                        <li><a href="#">فريق فيزيتا</a></li>
+                        <li><a href="#">وظائف</a></li>
+                        <li><a href="#">الصحافة</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5 class="fw-bold">ابحث عن طريق</h5>
+                    <ul>
+                        <li><a href="Elta5sos.html">التخصص</a></li>
+                        <li><a href="area.html">المنطقة</a></li>
+                        <li><a href="health.html">التأمين</a></li>
+                        <li><a href="#">المستشفى</a></li>
+                        <li><a href="#">المركز </a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5 class="fw-bold">هل أنت طبيب ؟</h5>
+                    <ul>
+                        <li><a href="#">انضم الى أطباء فيزيتا</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h5 class="fw-bold">تحتاج للمساعدة ؟</h5>
+                    <ul>
+                        <li><a href="#">اتصل بنا</a></li>
+                        <li><a href="#">شروط الاستخدام</a></li>
+                        <li><a href="#">اتفاقية الخصوصية</a></li>
+                        <li><a href="#">اتفاقية الخصوصية للأطباء</a></li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <ul>
+                        <li><a href="#"><img class="img-fluid"
+                                    src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/google-play-badge.png">
+                            </a></li>
+                        <li><a href="#"><img class="img-fluid"
+                                    src="https://d1aovdz1i2nnak.cloudfront.net/vezeeta-web-reactjs/33079/_next/static/images/app-store-badge.png">
+                            </a></li>
+                        <li class="d-flex">
+                            <a href="#"><i class="fa fa-facebook-f fs-3 ms-4"></i></a>
+                            <a href="#"><i class="fa fa-twitter fs-3 ms-4"></i></a>
+                            <a href="#"><i class="fa fa-instagram fs-3"></i></a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
